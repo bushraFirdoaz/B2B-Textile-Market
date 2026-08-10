@@ -1,0 +1,566 @@
+/* =========================================================
+   SUPPLIER ORDER DETAILS
+   PREMIUM TEAL + NAVY THEME
+========================================================= */
+
+.supplier-order-details {
+  width: 100%;
+
+  min-height: 100vh;
+
+  padding: 45px 7%;
+
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      circle at 5% 5%,
+      rgba(20, 184, 166, 0.10),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 95% 15%,
+      rgba(14, 165, 164, 0.08),
+      transparent 30%
+    ),
+    #f3f8f7;
+
+  color: #172a35;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-orders-btn {
+  border: none;
+
+  background: transparent;
+
+  color: #047857;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  padding: 0;
+
+  margin-bottom: 30px;
+
+  transition: all 0.2s ease;
+}
+
+.back-orders-btn:hover {
+  color: #0f766e;
+
+  transform: translateX(-4px);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.order-details-header {
+  max-width: 1100px;
+
+  margin: 0 auto 35px;
+
+  padding: 30px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #12343b,
+      #155e63
+    );
+
+  border-radius: 20px;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 15px 35px rgba(18, 52, 59, 0.18);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.order-details-header::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  border-radius: 50%;
+
+  right: -80px;
+  top: -100px;
+
+  background: rgba(45, 212, 191, 0.13);
+}
+
+.order-label {
+  margin: 0 0 8px;
+
+  color: #99f6e4;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.order-details-header h1 {
+  margin: 0 0 8px;
+
+  font-size: 36px;
+
+  color: #ffffff;
+}
+
+.order-details-header p:last-child {
+  margin: 0;
+
+  color: #c8dcdf;
+
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   LARGE STATUS
+========================================================= */
+
+.order-status-large {
+  position: relative;
+
+  z-index: 2;
+
+  padding: 9px 18px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  background: rgba(255, 255, 255, 0.14);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  color: #ffffff;
+
+  backdrop-filter: blur(8px);
+}
+
+.order-status-large.pending {
+  background: rgba(251, 191, 36, 0.18);
+
+  color: #fde68a;
+}
+
+.order-status-large.processing {
+  background: rgba(56, 189, 248, 0.18);
+
+  color: #bae6fd;
+}
+
+.order-status-large.shipped {
+  background: rgba(167, 139, 250, 0.20);
+
+  color: #ddd6fe;
+}
+
+.order-status-large.delivered {
+  background: rgba(74, 222, 128, 0.18);
+
+  color: #bbf7d0;
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+========================================================= */
+
+.order-details-grid {
+  max-width: 1100px;
+
+  margin: 0 auto 25px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+}
+
+.order-detail-card {
+  padding: 27px;
+
+  border: 1px solid #dcebe8;
+
+  border-radius: 17px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-shadow:
+    0 8px 25px rgba(20, 70, 70, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.order-detail-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 15px 30px rgba(20, 70, 70, 0.10);
+}
+
+.order-detail-card h2 {
+  margin: 0 0 22px;
+
+  font-size: 20px;
+
+  color: #12343b;
+}
+
+
+/* =========================================================
+   DETAIL ROWS
+========================================================= */
+
+.detail-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 20px;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #edf4f2;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row span {
+  color: #71858a;
+
+  font-size: 14px;
+}
+
+.detail-row strong {
+  color: #173c43;
+
+  font-size: 14px;
+
+  text-align: right;
+}
+
+
+/* =========================================================
+   ORDER SUMMARY
+========================================================= */
+
+.order-summary-card {
+  max-width: 1100px;
+
+  margin: 0 auto 30px;
+
+  padding: 27px;
+
+  border: 1px solid #dcebe8;
+
+  border-radius: 17px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 25px rgba(20, 70, 70, 0.06);
+}
+
+.order-summary-card h2 {
+  margin: 0 0 20px;
+
+  font-size: 20px;
+
+  color: #12343b;
+}
+
+.summary-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #edf4f2;
+
+  color: #71858a;
+
+  font-size: 14px;
+}
+
+.summary-row strong {
+  color: #173c43;
+}
+
+.summary-row.total-row {
+  border-bottom: none;
+
+  padding-bottom: 0;
+
+  font-size: 17px;
+}
+
+.summary-row.total-row strong {
+  color: #047857;
+
+  font-size: 21px;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.order-actions {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-btn {
+  padding: 11px 20px;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #047857;
+
+  border: 1px solid #059669;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #ecfdf5;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   STATUS SELECT
+========================================================= */
+
+.order-status-select {
+  padding: 11px 17px;
+
+  border: 1px solid #059669;
+
+  border-radius: 9px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #059669,
+      #0f766e
+    );
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  outline: none;
+
+  box-shadow:
+    0 6px 15px rgba(5, 150, 105, 0.18);
+
+  transition: all 0.2s ease;
+}
+
+.order-status-select:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 20px rgba(5, 150, 105, 0.25);
+}
+
+.order-status-select option {
+  background: #ffffff;
+
+  color: #12343b;
+}
+
+
+/* =========================================================
+   ORDER NOT FOUND
+========================================================= */
+
+.order-not-found {
+  min-height: 70vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 30px;
+
+  background: #f3f8f7;
+}
+
+.order-not-found h2 {
+  margin-bottom: 8px;
+
+  color: #12343b;
+}
+
+.order-not-found p {
+  color: #71858a;
+}
+
+.order-not-found button {
+  margin-top: 15px;
+
+  padding: 11px 20px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #059669,
+      #0f766e
+    );
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .supplier-order-details {
+    padding: 35px 5%;
+  }
+
+  .order-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-details-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .order-actions {
+    justify-content: flex-start;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .supplier-order-details {
+    padding: 30px 20px;
+  }
+
+  .order-details-header {
+    padding: 24px;
+  }
+
+  .order-details-header h1 {
+    font-size: 30px;
+  }
+
+  .detail-row {
+    flex-direction: column;
+
+    gap: 6px;
+  }
+
+  .detail-row strong {
+    text-align: left;
+  }
+
+  .summary-row {
+    gap: 15px;
+  }
+
+  .order-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .back-btn,
+  .order-status-select {
+    width: 100%;
+  }
+
+}
