@@ -1,0 +1,140 @@
+.buyer-dashboard {
+  min-height: calc(100vh - 100px);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 40px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #fffaf7,
+    #f7f0ff,
+    #eefaf8
+  );
+}
+
+
+.buyer-dashboard-content {
+  max-width: 750px;
+
+  background: white;
+
+  padding: 55px 45px;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 15px 45px rgba(30, 41, 59, 0.1);
+}
+
+
+.buyer-dashboard-badge {
+  display: inline-block;
+
+  padding: 8px 17px;
+
+  border-radius: 30px;
+
+  background: #f3e8ff;
+
+  color: #7e22ce;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+
+.buyer-dashboard-content h1 {
+  margin: 0 0 12px;
+
+  font-size: 38px;
+
+  color: #17324d;
+}
+
+
+.buyer-dashboard-content > p {
+  color: #64748b;
+
+  line-height: 1.7;
+
+  font-size: 17px;
+
+  margin-bottom: 30px;
+}
+
+
+.buyer-dashboard-actions {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+
+.buyer-dashboard-btn {
+  padding: 13px 20px;
+
+  border-radius: 10px;
+
+  border: 1px solid #ddd6fe;
+
+  background: white;
+
+  color: #6d28d9;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.25s;
+}
+
+
+.buyer-dashboard-btn:hover {
+  transform: translateY(-2px);
+
+  background: #f5f3ff;
+}
+
+
+.buyer-dashboard-btn.primary {
+  background: linear-gradient(
+    135deg,
+    #9333ea,
+    #db2777
+  );
+
+  color: white;
+
+  border: none;
+}
+
+
+@media (max-width: 600px) {
+
+  .buyer-dashboard-content {
+    padding: 40px 20px;
+  }
+
+  .buyer-dashboard-content h1 {
+    font-size: 30px;
+  }
+
+  .buyer-dashboard-btn {
+    width: 100%;
+  }
+
+}
