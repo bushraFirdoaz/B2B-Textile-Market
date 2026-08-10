@@ -1,0 +1,326 @@
+
+/* =========================================================
+   NAVBAR — PREMIUM TEXTILE MARKETPLACE
+========================================================= */
+
+.navbar {
+  width: 100%;
+  height: 74px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 6%;
+
+  box-sizing: border-box;
+
+  /* Premium glass-like white */
+  background: rgba(255, 255, 255, 0.96);
+
+  border-bottom: 1px solid #f0e3df;
+
+  /* Keeps navbar visible while scrolling */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-shadow: 0 4px 20px rgba(75, 35, 65, 0.06);
+
+  transition: all 0.3s ease;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.navbar-logo a {
+  text-decoration: none;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+
+  /* Textile-inspired gradient */
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #db2777,
+    #ea580c
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: opacity 0.25s ease;
+}
+
+.navbar-logo a:hover {
+  opacity: 0.8;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.navbar-links a {
+  position: relative;
+
+  text-decoration: none;
+
+  color: #374151;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  padding-bottom: 8px;
+
+  transition: color 0.25s ease;
+}
+
+
+/* Underline */
+
+.navbar-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    #db2777,
+    #ea580c
+  );
+
+  transition: width 0.25s ease;
+}
+
+
+/* Hover */
+
+.navbar-links a:hover {
+  color: #7c3aed;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+/* =========================================================
+   LOGIN / SIGN UP
+========================================================= */
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.navbar-buttons button {
+  padding: 10px 20px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  transition:
+    all 0.25s ease;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+========================================================= */
+
+.login-btn {
+  background: #ffffff;
+
+  color: #7c3aed;
+
+  border: 1px solid #d8c5f5;
+
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.05);
+}
+
+.login-btn:hover {
+  background: #f5efff;
+
+  border-color: #c4a1f3;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 15px rgba(124, 58, 237, 0.12);
+}
+
+
+/* =========================================================
+   SIGN UP BUTTON
+========================================================= */
+
+.signup-btn {
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #db2777
+  );
+
+  color: #ffffff;
+
+  border: 1px solid transparent;
+
+  box-shadow:
+    0 5px 15px rgba(124, 58, 237, 0.25);
+}
+
+.signup-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #6d28d9,
+    #be185d
+  );
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 22px rgba(124, 58, 237, 0.35);
+}
+
+
+/* =========================================================
+   BUTTON CLICK EFFECT
+========================================================= */
+
+.navbar-buttons button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .navbar-links {
+    gap: 22px;
+  }
+
+  .navbar-links a {
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    height: auto;
+
+    min-height: 70px;
+
+    padding: 15px 20px;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+  }
+
+
+  /* Logo */
+
+  .navbar-logo a {
+    font-size: 25px;
+  }
+
+
+  /* Navigation */
+
+  .navbar-links {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+  }
+
+  .navbar-links a {
+    font-size: 14px;
+  }
+
+
+  /* Buttons */
+
+  .navbar-buttons {
+    gap: 7px;
+  }
+
+  .navbar-buttons button {
+    padding: 8px 13px;
+
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .navbar {
+    padding: 14px 15px;
+  }
+
+  .navbar-logo a {
+    font-size: 23px;
+  }
+
+  .navbar-links {
+    gap: 12px;
+  }
+
+  .navbar-links a {
+    font-size: 13px;
+  }
+
+}
