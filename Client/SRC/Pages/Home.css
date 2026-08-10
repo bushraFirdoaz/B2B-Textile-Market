@@ -1,0 +1,297 @@
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home-page {
+  min-height: calc(100vh - 100px);
+  background: linear-gradient(
+    135deg,
+    #fffaf7 0%,
+    #f8f0ff 50%,
+    #eefaf8 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 60px 20px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.home-hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.home-content {
+  width: 100%;
+  max-width: 900px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   BADGE
+========================================= */
+
+.home-badge {
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  border-radius: 30px;
+
+  background: #f3e8ff;
+  color: #7e22ce;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.home-content h1 {
+  margin: 0;
+
+  font-size: 64px;
+  font-weight: 800;
+
+  background: linear-gradient(
+    90deg,
+    #9333ea,
+    #db2777
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.home-content h2 {
+  margin: 5px 0 15px;
+
+  font-size: 32px;
+  color: #17324d;
+  font-weight: 700;
+}
+
+
+.home-content > p {
+  margin: 0 auto 40px;
+
+  max-width: 650px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+
+/* =========================================
+   ROLE SECTION
+========================================= */
+
+.home-role-section {
+  background: rgba(255, 255, 255, 0.9);
+
+  border: 1px solid #eadff5;
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  margin: 20px auto;
+
+  max-width: 650px;
+
+  box-shadow: 0 10px 30px rgba(100, 60, 120, 0.08);
+}
+
+
+.home-role-section h3 {
+  margin: 0 0 6px;
+
+  font-size: 22px;
+
+  color: #17324d;
+}
+
+
+.home-role-section p {
+  margin: 0 0 18px;
+
+  color: #718096;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+
+.home-btn {
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+
+  min-width: 160px;
+
+  padding: 13px 22px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: all 0.25s ease;
+}
+
+
+/* Buyer Login */
+
+.buyer-login-btn {
+  background: white;
+
+  color: #7c3aed;
+
+  border: 1px solid #c4b5fd;
+}
+
+
+.buyer-login-btn:hover {
+  background: #f5f3ff;
+
+  transform: translateY(-2px);
+}
+
+
+/* Buyer Signup */
+
+.buyer-signup-btn {
+  background: linear-gradient(
+    135deg,
+    #9333ea,
+    #db2777
+  );
+
+  color: white;
+
+  border: none;
+}
+
+
+.buyer-signup-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(147, 51, 234, 0.25);
+}
+
+
+/* Supplier Login */
+
+.supplier-login-btn {
+  background: white;
+
+  color: #008f73;
+
+  border: 1px solid #7dd3c7;
+}
+
+
+.supplier-login-btn:hover {
+  background: #ecfdf5;
+
+  transform: translateY(-2px);
+}
+
+
+/* Supplier Signup */
+
+.supplier-signup-btn {
+  background: #008f73;
+
+  color: white;
+
+  border: none;
+}
+
+
+.supplier-signup-btn:hover {
+  background: #007a63;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(0, 143, 115, 0.25);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .home-page {
+    padding: 40px 15px;
+  }
+
+  .home-content h1 {
+    font-size: 48px;
+  }
+
+  .home-content h2 {
+    font-size: 25px;
+  }
+
+  .home-content > p {
+    font-size: 16px;
+  }
+
+  .home-role-section {
+    padding: 20px 15px;
+  }
+
+  .home-btn {
+    width: 100%;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+  }
+
+}
